@@ -1,0 +1,31 @@
+body{
+  font-family: 'Helvetica';
+  line-height: 1em;
+  color: black;
+  background-color: #fed792;
+}
+h1{
+  line-height: 1.5em;
+}
+a{
+  text-decoration: none;
+  color: #f60;
+
+}
+a:hover{
+  text-decoration: underline;
+}
+a.button_link{
+  background: url(button.png) no-repeat;
+  width: 210px;
+  height: 45px;
+  display: block;
+color: #a00000;
+line-height: 18px;
+font-weight: bold;
+}
+.buttonsBuyNow{
+  border: 1px solid black;
+  border-radius: 20px;
+  display: block;
+}
