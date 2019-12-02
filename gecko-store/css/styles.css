@@ -34,6 +34,7 @@ header, main, nav, aside, article, footer, figure, figcaption{
   padding: 0;
   position: relative;
 }
+
 .clearfix::after{
   content: "";
   display: block;
@@ -93,17 +94,18 @@ left: 1.5rem;
   background-color: rgba(238,85,51,0.8);
 }
 header{
-  background-color: rgba(0,0,0,0.6);
   color: white;
   height: 40px;
   padding-top: 10px;
   width: 100%;
   position: fixed;
+  background-color: rgba(0,0, 0, 0.5);
   z-index: 10;
 }
 body{
   font-family: "Raleway","Arial","Helvetica";
   font-size: 16px;
+  position: relative;
   color: #333;
   line-height: 1.6;
   background-color: #ded7d4;
@@ -151,27 +153,32 @@ asside li{
   position: relative;
 }
 article{
+  padding-top: 100px;
   position: relative;
   background-color: #fff;
-  margin: 15px;
+  margin: 10px;
   height: auto;
   padding-right: 5px;
 }
 asside{
-  float: right;
+  position: sticky;
+position: -webkit-sticky;
+ float: right;
+  top:10rem;
   width: 24%;
   padding: 1.5rem;
   background-color: #fff;
   line-height: 25px;
   display: block;
-  position: -webkit-sticky;
-  position: sticky;
+
+
   right: 1.5rem;
   top: 5rem;
 
 }
 footer{
   text-decoration: none;
+  position: relative;
 color: white;
   width: 100%;
   float:left;
@@ -224,7 +231,7 @@ figcaption{
   width: 100%;
   position: relative;
   box-sizing: content-box;
-  padding-bottom: 66%;
+  padding-bottom: 60%;
   height: 0;
   background-size: cover;
   margin-bottom: 10px;
@@ -253,4 +260,37 @@ figcaption{
   padding-right: 6px;
   margin-left: 6px;
   margin-right: 6px;
+}
+.product_list{
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product_list{
+  width: 100%;
+}
+.product_list li{
+  width: 33.33%;
+
+}
+.product_list li,a,figure,figcaption{
+  text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+}
+.product_list b{
+  font-size: 1.3rem;
+}
+.product_list figure{
+  color: white;
+  padding: 1rem;
+  background-color: rgba(33,34,37,0.9);
+}
+.product_list li{
+  display: block;
+  padding: 10px;
+
 }
